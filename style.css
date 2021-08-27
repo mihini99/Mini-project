@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*add font style*/
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/uni.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+	direction: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+
+}
+nav img{
+	width: 150;
+
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+    
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+     
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0% ;
+	height: 2px;
+	background: #afff81;
+	display: block;
+	margin: auto;
+	transition: 0.7s;
+
+}
+/*
+hovertag for front page 
+*/
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    /*for get on middle position*/
+    transform: translate(-50%,50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 70px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff; ;
+}
+.mm_btn{
+    display: inline-block; 
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px ;
+    background: transparent ;
+    position: relative;
+    cursor: pointer;
+}
+.mm_btn:hover{
+    border: 1px solid #4cf436;
+    background: #56f436;
+    transition: 1s;
+}
+/*small screen phones*/
+@media(max-width:700px){
+    .text-box h1{
+         font: size 62px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+    
+ 
+           /*Course*/
+.Course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px ;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    
+
+}
+p{
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Course-column{
+    flex-basis: 32%;
+    background:#c8f8ba ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px 12px;
+    box-sizing: border-box ;
+   
+
+
+}
+h3{
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.Course-column:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+@media(max-width:1000px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+       /*Campus*/
+.Campus{
+   width: 80%;
+   margin:auto;
+   text-align:center;
+   padding-top:50px;
+
+}
+.Campus-column{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.Campus-column img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+
+}
+.layer:hover{
+    background:rgba(165, 250, 157, 0.7);
+}
+.layer h3{
+    color: #fff;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);/*at the bottom & center from X axes*/
+    position: absolute;
+    opacity: 0;
+    transition:0.9s;
+    
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;  
+}
+
+/*Enroll for courses*/
+.Enroll{
+    margin: 100px auto;
+    width:80%;
+    background-image: url(image/p5.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px; 
+    text-align: center;
+    padding: 100px 0;
+}
+.Enroll h1{
+    color: #161616;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+    
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(13, 35, 121, 0.7);
+}
+.footer p{
+    color: black;
+
+}
+/*--------------------techmentors page------------------*/
+.sub-header{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/us.jfif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*Facilities*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+     
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+     
+}
+.facilities2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+     
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+     
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+   
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+.about-col img{
+    width: 100%;
+}
+/*----------------------------Courses--------------------------------*/
+.sub-header2{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/courses.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.facilities3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+     
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+/*-------------------------------Queries-------------------------*/
+.sub-header3{
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(#04091eb3,rgba(4,9,30,0.7)),url(image/p3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.queries-col input,.queries-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #cacaca;
+}
+.mn_btn{
+    display: inline-block; 
+    text-decoration: none;
+    color: rgb(36, 13, 121);
+    border: 1px solid rgb(19, 18, 18);
+    padding: 12px 34px;
+    font-size: 13px ;
+    background: rgb(182, 165, 245);
+    position: relative;
+    cursor: pointer;
+}
+.mn_btn:hover{
+    border: 1px solid #5f36f4;
+    background: #2c92f1;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------Contact Us-------------------------*/
+.sub-header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/us2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin:auto ;
+
+}
+.contact-us-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-us div{
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-us-col div p{
+    padding: 0;
+}
+.contact-us-col div h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #161616;
+    
+}
+.contact-us-col input,.contact-us-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #c8f8ba;
+}
+.mn_btn{
+    display: inline-block; 
+    text-decoration: none;
+    color: rgb(36, 13, 121);
+    border: 1px solid rgb(19, 18, 18);
+    padding: 12px 34px;
+    font-size: 13px ;
+    background: rgb(182, 165, 245);
+    position: relative;
+    cursor: pointer;
+}
+.mn_btn:hover{
+    border: 1px solid #5f36f4;
+    background: #2c92f1;
+    transition: 1s;
+}
+
+
+
+
+     
